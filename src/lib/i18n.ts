@@ -1,0 +1,130 @@
+export type Locale = "zh" | "en" | "fr";
+
+export const locales: Locale[] = ["zh", "en", "fr"];
+
+export const translations = {
+  zh: {
+    navHome: "首页",
+    navTournaments: "赛事",
+    navAdmin: "后台",
+    heroEyebrow: "WPK 线上锦标赛平台",
+    heroTitle: "个人俱乐部晋级赛奖励推出",
+    heroSubtitle:
+      "十一房百人局每房 9 人，积分输完将被淘汰，赛后可继续报名加入新俱乐部继续参赛。决赛中十一房第一进入总决赛，前三名可获取奖励。",
+    heroDescription:
+      "第一名最高奖励 666，第二名 266，第三名 166。百人未满时可先预热，赛后满 100 人即将开赛。比赛 24 小时内参加，提高个人手牌，挑战不同地区玩家。",
+    ctaPrimary: "立即报名",
+    ctaSecondary: "查看赛事",
+    highlightTitle: "赛事亮点",
+    highlightPrize: "总奖池",
+    highlightNewest: "最新赛事",
+    tournamentTitle: "赛事列表",
+    tournamentSubtitle: "所有赛事",
+    backHome: "返回首页",
+    eventCardTitle: "专属活动",
+    eventCardText: "只接收 USDT，赛事结束后可重新加入新俱乐部继续挑战。",
+    rulesTitle: "比赛规则",
+    rulesText: "报名费 20 USDT，冠军可获得最高 666，亚军 266，季军 166。",
+    loginTitle: "登录 / 注册",
+    loginSubtitle: "请输入邮箱继续，后续可接入 Supabase Auth 与 Google 登录。",
+    adminTitle: "运营仪表盘",
+    adminSubtitle: "管理后台",
+    adminTodo: "待办事项",
+    adminCreateTournament: "创建赛事",
+    adminReviewResults: "审核成绩",
+    adminPublishNotice: "发布公告",
+    adminButtonsLabel: "常用功能",
+    formTitle: "创建赛事",
+    formButton: "创建赛事",
+    noticeTitle: "公告",
+    languageLabel: "语言",
+    paymentNote: "仅支持 USDT 支付",
+    localeSwitch: "切换语言",
+  },
+  en: {
+    navHome: "Home",
+    navTournaments: "Tournaments",
+    navAdmin: "Admin",
+    heroEyebrow: "WPK Online Tournament Platform",
+    heroTitle: "Club Promotion Battle Rewards Are Live",
+    heroSubtitle:
+      "In the 11-table 100-player format, each table has 9 players. Once your points are exhausted, you are eliminated; after the match, you can register for a new club and continue competing.",
+    heroDescription:
+      "The final will feature the first-place finisher from the 11-table phase. The top three earn rewards: 1st up to 666, 2nd 266, 3rd 166. If the 100-player field is not full, players can warm up together and the event starts once it reaches 100 players.",
+    ctaPrimary: "Join Now",
+    ctaSecondary: "View Events",
+    highlightTitle: "Event Highlights",
+    highlightPrize: "Total Prize Pool",
+    highlightNewest: "Latest Tournament",
+    tournamentTitle: "Tournament Schedule",
+    tournamentSubtitle: "All Events",
+    backHome: "Back Home",
+    eventCardTitle: "Special Event",
+    eventCardText: "Only USDT is accepted. After the tournament, you can join a new club and continue the challenge.",
+    rulesTitle: "Match Rules",
+    rulesText: "Entry fee is 20 USDT. The top prizes are 666 for 1st, 266 for 2nd, and 166 for 3rd.",
+    loginTitle: "Log In / Sign Up",
+    loginSubtitle: "Enter your email to continue. Supabase Auth and Google login can be connected next.",
+    adminTitle: "Operations Dashboard",
+    adminSubtitle: "Admin Console",
+    adminTodo: "To Do",
+    adminCreateTournament: "Create Tournament",
+    adminReviewResults: "Review Results",
+    adminPublishNotice: "Publish Notice",
+    adminButtonsLabel: "Common Actions",
+    formTitle: "Create Tournament",
+    formButton: "Create Tournament",
+    noticeTitle: "Announcements",
+    languageLabel: "Language",
+    paymentNote: "USDT only",
+    localeSwitch: "Switch Language",
+  },
+  fr: {
+    navHome: "Accueil",
+    navTournaments: "Événements",
+    navAdmin: "Admin",
+    heroEyebrow: "Plateforme de tournois WPK",
+    heroTitle: "Récompenses du tournoi de promotion du club lancées",
+    heroSubtitle:
+      "Dans le format 11 tables / 100 joueurs, chaque table accueille 9 joueurs. Une fois vos points épuisés, vous êtes éliminé ; après le match, vous pouvez vous inscrire à un nouveau club et continuer à concourir.",
+    heroDescription:
+      "La finale opposera le premier du tour 11 tables. Les trois premiers reçoivent des récompenses : 1er jusqu'à 666, 2e 266, 3e 166. Si la file de 100 joueurs n'est pas complète, les joueurs peuvent se réchauffer ensemble et l'événement commence dès qu'elle atteint 100 joueurs.",
+    ctaPrimary: "Participer",
+    ctaSecondary: "Voir les événements",
+    highlightTitle: "Points forts",
+    highlightPrize: "Total des prix",
+    highlightNewest: "Dernier tournoi",
+    tournamentTitle: "Calendrier des tournois",
+    tournamentSubtitle: "Tous les événements",
+    backHome: "Retour à l'accueil",
+    eventCardTitle: "Événement spécial",
+    eventCardText: "Seul l'USDT est accepté. Après le tournoi, vous pouvez rejoindre un nouveau club et poursuivre le défi.",
+    rulesTitle: "Règlement",
+    rulesText: "Le droit d'entrée est de 20 USDT. Les premiers prix sont 666 pour le 1er, 266 pour le 2e et 166 pour le 3e.",
+    loginTitle: "Connexion / Inscription",
+    loginSubtitle: "Entrez votre adresse e-mail pour continuer. Supabase Auth et la connexion Google peuvent être intégrées ensuite.",
+    adminTitle: "Tableau de bord",
+    adminSubtitle: "Console d'administration",
+    adminTodo: "À faire",
+    adminCreateTournament: "Créer un tournoi",
+    adminReviewResults: "Vérifier les résultats",
+    adminPublishNotice: "Publier une annonce",
+    adminButtonsLabel: "Actions fréquentes",
+    formTitle: "Créer un tournoi",
+    formButton: "Créer un tournoi",
+    noticeTitle: "Annonces",
+    languageLabel: "Langue",
+    paymentNote: "USDT uniquement",
+    localeSwitch: "Changer de langue",
+  },
+};
+
+export function getLocale(searchParams?: Record<string, string | string[] | undefined>): Locale {
+  const value = searchParams?.lang;
+  const raw = typeof value === "string" ? value : Array.isArray(value) ? value[0] : undefined;
+  return raw === "en" || raw === "fr" ? raw : "zh";
+}
+
+export function getText(locale: Locale, key: keyof (typeof translations)["zh"]) {
+  return translations[locale][key];
+}
