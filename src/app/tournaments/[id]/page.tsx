@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getLocale, getText } from "@/lib/i18n";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import TournamentRegisterCard from "@/components/TournamentRegisterCard";
 
 async function getTournament(id: string) {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
@@ -53,6 +54,10 @@ export default async function TournamentDetailPage({ params, searchParams }: { p
                 </a>
               </div>
             </div>
+          </div>
+
+          <div className="mt-8">
+            <TournamentRegisterCard tournamentId={id} />
           </div>
         </div>
       </div>

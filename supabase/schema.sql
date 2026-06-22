@@ -28,6 +28,8 @@ create table if not exists public.registrations (
   tournament_id uuid not null references public.tournaments(id) on delete cascade,
   payment_status text default 'pending',
   payment_method text default 'USDT',
+  tx_hash text,
+  notes text,
   created_at timestamptz default now(),
   unique(user_id, tournament_id)
 );

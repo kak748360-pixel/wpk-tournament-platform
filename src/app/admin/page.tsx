@@ -43,6 +43,9 @@ export default async function AdminDashboardPage({ searchParams }: { searchParam
               <Link href={`/admin/tournaments?lang=${locale}`} className="btn-secondary block w-full">
                 {t("formTitle")}
               </Link>
+              <Link href={`/admin/results?lang=${locale}`} className="btn-secondary block w-full">
+                Result Entry
+              </Link>
               <a href={`/api/leaderboard?lang=${locale}`} className="btn-secondary block w-full" target="_blank" rel="noreferrer">
                 Leaderboard API
               </a>
