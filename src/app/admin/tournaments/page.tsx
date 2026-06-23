@@ -1,12 +1,22 @@
 "use client";
 
 import Link from "next/link";
+import { Suspense, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { useState } from "react";
 import { getLocale, getText } from "@/lib/i18n";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
+export const dynamic = "force-dynamic";
+
 export default function AdminTournamentsPage() {
+  return (
+    <Suspense fallback={<div className="mx-auto flex min-h-screen max-w-4xl items-center justify-center text-slate-400">Loading...</div>}>
+      <AdminTournamentsPageContent />
+    </Suspense>
+  );
+}
+
+function AdminTournamentsPageContent() {
   const searchParams = useSearchParams();
   const locale = getLocale({ lang: searchParams.get("lang") || undefined });
   const t = (key: keyof typeof import("@/lib/i18n").translations[typeof locale]) => getText(locale, key);
